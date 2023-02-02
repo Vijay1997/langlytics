@@ -1,0 +1,28 @@
+
+
+
+.navbar {
+    background-image: linear-gradient(37deg, rgb(40, 21, 236),rgb(32, 218, 233));
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+.hero{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../icons/wallpaperflare.com_wallpaper.jpg);
+    
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
