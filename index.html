@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class=" scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>langlytics</title>
+    <link rel="icon" type="image/x-icon" href="/icons/android-chrome-512x512.png">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="p-0 m-0  font-serif">
+    <!-- Header -->
+    <header class="  bg-white fixed top-0   z-50 min-w-full   ">
+            <!-- navbar -->
+        <nav class="  max-w-[1400px] mx-auto flex flex-col py-1  lg:flex-row  lg:flex-nowrap lg:flex lg:items-center  lg:justify-between lg:space-x-10 border-none transition-all ease-in-out  px-4">
+            <!-- logo and mobile menu section -->
+            <div class="  flex items-center justify-between transition-all ease-in-out duration-100">
+                <!-- Logo -->
+                <div class="flex  items-center justify-center  transition-all ease-in-out ">
+                    <img class=" max-w-[100px] navigation overflow-hidden" src="../icons/Transparent Logo.png" alt="logo"> 
+                </div>
+                <!-- mobile-menu Icon -->
+                <div class=" lg:hidden  cursor-pointer  text-gray-700 ">
+                    <i class="fa-solid fa-bars menu-button fa-2x px-4 transition-all delay-100 ease-in-out"></i>
+                </div>   
+            </div>
+            <!-- Nav-menu section -->
+            <div class="  hidden lg:flex     justify-between items-center   space-x-4 ">
+
+                <div class="flex space-x-4  justify-between  items-center  ">
+                    <a href="#home" class="    block text-center  transition-all ease-in-out duration-150 rounded-xl hover:bg-gray-100 bg-transparent text-xl  px-4 py-2.5  font-medium text-gray-700 hover:text-black min-w-[100px]"> Home</a>
+                    <a href="#about" class="   block text-center  transition-all ease-in-out duration-150 rounded-xl hover:bg-gray-100 bg-transparent text-xl  px-4 py-2.5   font-medium text-gray-700 hover:text-black min-w-[100px]"> About</a>
+                    <a href="#services" class="  block text-center transition-all ease-in-out duration-150  rounded-xl hover:bg-gray-100 bg-transparent text-xl  px-4 py-2.5   font-medium text-gray-700 hover:text-black min-w-[100px]"> Services</a>
+                    <a href="#contact" class="   block text-center transition-all ease-in-out duration-150  rounded-xl hover:bg-gray-100 bg-transparent text-xl  px-4 py-2.5   font-medium text-gray-700 hover:text-black  min-w-[100px]"> Contact</a>
+                    <a href="#blog" class="   block text-center  transition-all ease-in-out duration-150 rounded-xl hover:bg-gray-100 bg-transparent text-xl   px-4 py-2.5   font-medium text-gray-700 hover:text-black  min-w-[100px]"> Blog</a>
+                </div>
+
+                
+            </div>   
+
+            <div class="lg:flex hidden  justify-between items-center   space-x-4 ">
+              <button class=" text-center transition-all ease-in-out  hover:bg-sky-600 bg-transparent rounded-md px-3 py-2.5  border-solid border-2 border-[#3F83EF] text-gray-600 hover:text-white">
+                  <a href="#" class=" block    text-xl   font-bold  "> Login</a>
+              </button>
+
+              <button class=" whitespace-nowrap text-center transition-all ease-in-out  hover:bg-transparent rounded-md px-3 py-2.5 border-solid border-2 border-white hover:border-solid hover:border-2 hover:border-[#3F83EF]  bg-[#3F83EF] text-white hover:text-black ">
+                <a href="#" class=" block    text-xl   font-bold  "> Get Strated</a>
+            </button>
+              
+            </div> 
+            
+            
+            <!-- Mobile-Menu -->
+            <div  class="mobile-menu sidebar min-h-screen w-[3.8rem] overflow-hidden   hover:w-56 hover:shadow-lg  lg:hidden bg-[#2F343D] border-solid border-r-8 border-[#3F83EF] block absolute inset-x-0 top-full float-right   transform -translate-x-full transition-all duration-300 ease-in-out  ">
+                  <ul class="mt-6 ml-2  space-y-2 tracking-wide relative flex min-h-[500px] justify-between flex-col transition-all duration-300 ease-in-out">
+                    <li class="min-w-max ">
+                      <a href="#home" aria-label="home" class="relative  hover:bg-[#3F83EF] before:absolute before:top-[-20px] before:right-0 before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-full before:hover:shadow-[10px_10px_0_#3F83EF]  after:absolute after:bottom-[-20px] after:right-0 after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-full after:hover:shadow-[10px_-10px_0_#3F83EF] flex items-center space-x-4 rounded-tl-full rounded-bl-full  px-4 py-3 text-gray-100 hover:text-white "> 
+                        <i class="fa-solid fa-house  h-5 w-5 "></i>
+                        <span class="-mr-1 font-bold group-hover:text-gray-700">Home</span>
+                      </a>
+                    </li>
+                    <li class="min-w-max">
+                      <a href="#about" class="relative  hover:bg-[#3F83EF] before:absolute before:top-[-20px] before:right-0 before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-full before:hover:shadow-[10px_10px_0_#3F83EF]  after:absolute after:bottom-[-20px] after:right-0 after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-full after:hover:shadow-[10px_-10px_0_#3F83EF] flex items-center space-x-4 rounded-tl-full rounded-bl-full  px-4 py-3 text-gray-100 hover:text-white">
+                        <i class="fa-solid fa-user h-5 w-5"></i>
+                        <span class="font-bold">About</span>
+                      </a>
+                    </li>
+                    <li class="min-w-max">
+                      <a href="#services" class="relative  hover:bg-[#3F83EF] before:absolute before:top-[-20px] before:right-0 before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-full before:hover:shadow-[10px_10px_0_#3F83EF]  after:absolute after:bottom-[-20px] after:right-0 after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-full after:hover:shadow-[10px_-10px_0_#3F83EF] flex items-center space-x-4 rounded-tl-full rounded-bl-full  px-4 py-3 text-gray-100 hover:text-white">
+                        <i class="fa-solid fa-gears h-5"></i>
+                        <span class="font-bold">Services</span>
+                      </a>
+                    </li>
+                    <li class="min-w-max">
+                      <a href="#contact" class="relative  hover:bg-[#3F83EF] before:absolute before:top-[-20px] before:right-0 before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-full before:hover:shadow-[10px_10px_0_#3F83EF]  after:absolute after:bottom-[-20px] after:right-0 after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-full after:hover:shadow-[10px_-10px_0_#3F83EF] flex items-center space-x-4 rounded-tl-full rounded-bl-full  px-4 py-3 text-gray-100 hover:text-white">
+                        <i class="fa-solid fa-address-card h-5 w-5"></i>
+                        <span class="font-bold">Contact</span>
+                      </a>
+                    </li>
+                    <li class="min-w-max">
+                      <a href="#blog" class="relative  hover:bg-[#3F83EF] before:absolute before:top-[-20px] before:right-0 before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-full before:hover:shadow-[10px_10px_0_#3F83EF]  after:absolute after:bottom-[-20px] after:right-0 after:w-[20px] after:h-[20px] after:bg-transparent after:rounded-full after:hover:shadow-[10px_-10px_0_#3F83EF] flex items-center space-x-4 rounded-tl-full rounded-bl-full  px-4 py-3 text-gray-100 hover:text-white">
+                        <i class="fa-solid fa-blog h-5 w-5"></i>
+                        <span class=" font-bold">Blog</span>
+                      </a>
+                    </li>
+
+                    <li class="min-w-max ">
+                      <a href="#register" class="group flex items-center space-x-4 rounded-full px-4 py-3 text-gray-100 hover:bg-gradient-to-r from-sky-600 to-cyan-400 hover:text-white">
+                        <i class="fa-solid fa-right-to-bracket h-5 w-5"></i>
+                        <span class=" font-extrabold">Regiser</span>
+                      </a>
+                    </li>
+                  </ul>
+                
+            </div>     
+
+        </nav>
+    </header>
+    <section id="home" class="hero ">
+        <div class=" max-w-[1400px] mx-auto flex flex-col justify-center items-center min-h-screen  p-4  transition-all duration-100 ease-in-out ">
+            <h1 class=" mb-2  text-[34px]   font-bold leading-[50px] text-white text-left   font-sans  " >Power Your language with AI  and turn chatbot dreams into  reality</h1>
+            
+            <button class="   w-40 text-center transition-all ease-in-out duration-700 hover:bg-blue-500 bg-orange-700 rounded-xl p-4 m-4 z-1">
+                <a href="#" class=" block    font-bold text-white text-2xl p-1"> Get Start</a>
+            </button>
+        </div> 
+    </section>
+
+    <!-- About Page -->
+    <div id="about" class=" min-h-screen flex items-center ">
+           
+          <div class="max-w-[1400px] mx-auto grid grid-cols-1 place-items-center lg:grid-cols-2 transition-all duration-100 ease-in-out  justify-items-center  p-4">
+            <div class="flex text-center lg:order-last transition-all duration-100 ease-in-out">
+                <img src="../icons/about-style3.png" alt="about.png">
+            </div>
+            <div class=" mx-auto w-full flex justify-center items-center flex-col flex-shrink transition-all duration-100 ease-in-out ">
+              <div class="  flex    mx-auto    transition-all duration-100 ease-in-out">
+                <h1 class=" mx-auto self-start    text-3xl  font-bold leading-[40px] text-black  whitespace-wrap font-sans  mb-[26px]" >Convert Your Unstructured Data Into   Actionable Insights with NLP Techniques  reality</h1>
+              </div>
+                <p class=" transition-all duration-100 ease-in-out text-left font-[400] text-base leading-6 mb-[26px] ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam natus hic unde odit, temporibus nemo numquam voluptatem, repellendus alias ad cumque obcaecati nostrum quisquam exercitationem repudiandae, aliquam recusandae commodi reprehenderit!
+                </p>
+                <p class="text-left transition-all duration-100 ease-in-out font-[400] text-base leading-6 mb-[26px]  ">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- services Page -->
+    <div class="min-h-screen   bg-white border-none  ">
+      <div id="services" class="   min-h-screen   p-4 max-w-[1400px] mx-auto"  >
+        <div class=" flex items-center justify-center ">
+          <h1 class=" text-3xl mx-auto  font-bold  text-black  whitespace-wrap font-sans pt-20 pb-14">
+            Develop a Powerful NLP Application That Includes
+          </h1>
+        </div>
+          <div class="  grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3  gap-12 place-content-center justify-items-center ">
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+  
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                  <div class="px-6 py-4">
+                    <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                  </div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                    <p class=" text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2 text-start">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      <a href="#machine _learning">
+                          #More
+                      </a>
+                    </span> 
+                  </div>
+              </div>  
+
+              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+                <div class="px-6 py-4">
+                  <img class="w-20 h-20 " src="../icons/machin.png" alt="Sunset in the mountains">
+                </div>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                  <p class=" text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 text-start">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <a href="#machine _learning">
+                        #More
+                    </a>
+                  </span> 
+                </div>
+            </div>
+  
+          </div>
+      </div>
+    </div>
+
+    <div id="" class=" bg-white min-h-[700px] flex justify-center items-center   w-full mx-auto  mt-10"> 
+      <div class="bg-[#3F83EF] w-full">
+      <div class=" mx-auto min-h-[700px] flex flex-col justify-between lg:flex-row lg:space-x-20 space-y-6 lg:space-y-0  max-w-[1400px]  p-8 sm:p-12 rounded-xl  text-white overflow-hidden">
+        <div class="flex  items-center lg:justify-end justify-center transition-all duration-100 ease-in-out lg:w-[700px] w-autos">
+          <img src="../icons/profile.jpg" alt="about.png" class="rounded-full lg:min-w-[300px] lg:min-h-[300px] max-w-[300px] max-h-[300px] ">
+        </div>
+      <div class=" mx-auto  flex justify-center items-center flex-col flex-shrink transition-all duration-100 ease-in-out  ">
+        <div class="  flex flex-col   mx-auto    transition-all duration-100 ease-in-out">
+          <h1 class=" mx-auto self-start    text-3xl  font-bold leading-[40px] text-white  whitespace-wrap font-sans  mb-[26px]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga voluptates mollitia sequi facere accusamus hic consequuntur in, nulla sapiente deserunt aspernatur ullam debitis architecto atque repudiandae iusto maxime soluta!</h1>
+
+          <div >
+            <span class="fa fa-star checked text-yellow-400"></span>
+            <span class="fa fa-star text-yellow-400"></span>
+            <span class="fa fa-star text-yellow-400"></span>
+            <span class="fa fa-star text-yellow-400"></span>
+            <span class="fa fa-star "></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  
+  </div>
+    
+    <div id="contact" class=" min-h-screen flex justify-center items-center   max-w-[1400px] mx-auto my-10"> 
+        <div class=" mx-4  min-h-[700px] flex flex-col justify-between lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0 bg-cyan-700 w-full  p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+        <div class="flex flex-col justify-around space-y-8 ">
+          <div>
+            <h1 class="font-bold text-4xl tracking-wide">
+              Contact US
+            </h1>
+            <p class="text-cyan-100 text-base pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste dicta ipsam inventore recusandae dolorum 
+            </p>
+          </div>
+          <div class="flex flex-col space-y-6">
+            <div class="inline-flex space-x-2 items-center">
+              <i class="fa-solid fa-phone text-teal-300 text-xl"></i>
+              <span>
+                +919663842341
+              </span>
+            </div>
+
+            <div class="inline-flex space-x-2 items-center">
+              <i class="fa-solid fa-envelope text-teal-300 text-xl"></i>
+              <span>
+                vijaykumark19997@gmail.com
+              </span>
+            </div>
+
+            <div class="inline-flex space-x-2 items-center">
+              <i class="fa-solid fa-location-pin text-teal-300 text-xl"></i>
+              <span>
+                Yalachenahalli, Bangalore, Karnataka, India 
+              </span>
+            </div>
+          </div>
+          <div class="flex space-x-4 text-lg">
+            <a href="#"><i class="fa-brands fa-facebook "></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+        </div>
+
+        <div class="relative min-h-full">
+          <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28 "></div>
+          <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-28 -bottom-16 "></div>
+          
+          <div class= "bg-white relative z-1 rounded-xl shadow-lg   text-gray-600 min-w-[300px] p-8 sm:p-12 min-h-full ">
+          
+            <form action="" class="flex flex-col space-y-4 justify-around min-h-full">
+              <div>
+                <label for="" class=" text-sm">Your Name</label>
+                <input type="text" placeholder="Your Name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+              </div>
+             
+  
+              <div>
+                <label for="" class=" text-sm">Email Address</label>
+                <input type="email" placeholder="Email Address" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300">
+              </div>
+  
+              <div>
+                <label for="" class=" text-sm">Message</label>
+                <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+              </div>
+                
+              <button class="inline-block self-end bg-cyan-700 font-bold rounded-lg px-6 py-4 uppercase text-sm text-white">Send message</button>
+            </form>
+  
+          </div>
+        </div>
+
+
+      </div>
+    
+    </div>
+
+    <!-- component -->
+<!-- Foooter -->
+<section class="bg-lime-200">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+              <a href="#about" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  About
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#services" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Services
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#contact" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contact
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#blog" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Blog
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#register" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Register
+              </a>
+          </div>
+          
+          
+      </nav>
+      
+      <div class="flex space-x-8 text-lg justify-center text-blue-500">
+        <a href="#"><i class="fa-brands fa-facebook "></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2023 SomeCompany, Inc. All rights reserved.
+      </p>
+  </div>
+</section>
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
