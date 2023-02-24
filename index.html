@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>langlytics</title>
-    <link rel="icon" type="image/x-icon" href="./icons/android-chrome-512x512.png">
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="icon" type="image/x-icon" href="/icons/android-chrome-512x512.png">
+    <link rel="stylesheet" href="../src/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="./build/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +21,12 @@
     <!-- Header -->
     <header class="  bg-white fixed top-0   z-50 min-w-full   ">
             <!-- navbar -->
-        <nav class="  max-w-[1400px] mx-auto flex flex-col py-1  lg:flex-row  lg:flex-nowrap lg:flex lg:items-center  lg:justify-between lg:space-x-10 border-none transition-all ease-in-out  px-4">
+        <nav class="  max-w-[1400px] mx-auto flex flex-col py-1  lg:flex-row  lg:flex-nowrap lg:flex lg:items-center  lg:justify-between lg:space-x-10 border-none transition-all ease-in-out  px-4 ">
             <!-- logo and mobile menu section -->
             <div class="  flex items-center justify-between transition-all ease-in-out duration-100">
                 <!-- Logo -->
                 <div class="flex  items-center justify-center  transition-all ease-in-out ">
-                    <img class=" max-w-[100px] navigation overflow-hidden" src="./icons/Transparent Logo.png" alt="logo"> 
+                    <img class=" navigation max-w-[100px]  overflow-hidden  " src="../icons/Transparent Logo.png" alt="logo"> 
                 </div>
                 <!-- mobile-menu Icon -->
                 <div class=" lg:hidden  cursor-pointer  text-gray-700 ">
@@ -47,15 +47,9 @@
                 
             </div>   
 
-            <div class="lg:flex hidden  justify-between items-center   space-x-4 ">
-              <button class=" text-center transition-all ease-in-out  hover:bg-sky-600 bg-transparent rounded-md px-3 py-2.5  border-solid border-2 border-[#3F83EF] text-gray-600 hover:text-white">
-                  <a href="#" class=" block    text-xl   font-bold  "> Login</a>
+            <div class="lg:flex hidden  justify-between items-center   ">
+                <a href="#" class=" block    text-xl   font-bold  "> Get In Touch!</a>
               </button>
-
-              <button class=" whitespace-nowrap text-center transition-all ease-in-out  hover:bg-transparent rounded-md px-3 py-2.5 border-solid border-2 border-white hover:border-solid hover:border-2 hover:border-[#3F83EF]  bg-[#3F83EF] text-white hover:text-black ">
-                <a href="#" class=" block    text-xl   font-bold  "> Get Strated</a>
-            </button>
-              
             </div> 
             
             
@@ -105,14 +99,17 @@
 
         </nav>
     </header>
-    <section id="home" class="hero ">
-        <div class=" max-w-[1400px] mx-auto flex flex-col justify-center items-center min-h-screen  p-4  transition-all duration-100 ease-in-out ">
-            <h1 class=" mb-2  text-[34px]   font-bold leading-[50px] text-white text-left   font-sans  " >Power Your language with AI  and turn chatbot dreams into  reality</h1>
-            
-            <button class="   w-40 text-center transition-all ease-in-out duration-700 hover:bg-blue-500 bg-orange-700 rounded-xl p-4 m-4 z-1">
-                <a href="#" class=" block    font-bold text-white text-2xl p-1"> Get Start</a>
+    <section id="home" class="hero  ">
+        <div class=" max-w-[1400px] mx-auto flex flex-col justify-center  min-h-screen  p-4  transition-all duration-100 ease-in-out ">
+          <h1 class=" max-w-2xl mb-2  text-[50px]   font-bold leading-[50px] text-white text-left   font-sans  ">
+            Language Analytics
+          </h1>
+            <h1 class=" max-w-sm mb-2  text-lg  text-zinc-600 text-left   font-sans   py-8" >Power Your language with AI  and turn chatbot dreams into  reality</h1> 
+            <button class="max-w-max text-center transition-all ease-in-out  hover:bg-transparent rounded-full px-8 py-2.5    bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-white ">
+              <a href="#" class=" block    text-lg   font-bold  "> Get Strated</a>
             </button>
         </div> 
+        
     </section>
 
     <!-- About Page -->
@@ -120,210 +117,114 @@
            
           <div class="max-w-[1400px] mx-auto grid grid-cols-1 place-items-center lg:grid-cols-2 transition-all duration-100 ease-in-out  justify-items-center  p-4">
             <div class="flex text-center lg:order-last transition-all duration-100 ease-in-out">
-                <img src="./icons/about-style3.png" alt="about.png">
+                <img src="../icons/about_img.jpg" alt="about.png">
             </div>
             <div class=" mx-auto w-full flex justify-center items-center flex-col flex-shrink transition-all duration-100 ease-in-out ">
               <div class="  flex    mx-auto    transition-all duration-100 ease-in-out">
-                <h1 class=" mx-auto self-start    text-3xl  font-bold leading-[40px] text-black  whitespace-wrap font-sans  mb-[26px]" >Convert Your Unstructured Data Into   Actionable Insights with NLP Techniques  reality</h1>
+                <h1 class=" mx-auto self-start    text-3xl  font-bold leading-[40px] text-black  whitespace-wrap font-sans  mb-[26px]" >Empowering Businesses With Language Analytics</h1>
               </div>
                 <p class=" transition-all duration-100 ease-in-out text-left font-[400] text-base leading-6 mb-[26px] ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam natus hic unde odit, temporibus nemo numquam voluptatem, repellendus alias ad cumque obcaecati nostrum quisquam exercitationem repudiandae, aliquam recusandae commodi reprehenderit!
+                  Our language analytics, powered by advanced natural language processing and chatbots, offer a new level of insight into your data. By simplifying data insights, we enable businesses to make data-driven decisions with confidence. 
                 </p>
                 <p class="text-left transition-all duration-100 ease-in-out font-[400] text-base leading-6 mb-[26px]  ">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!
+                  Our innovative approach to language analytics provides a deeper understanding of customer needs and market trends. With chatbots and NLP, we bring the power of intelligent automation to your data analysis. Experience the importance of NLP and chatbots in language analytics and unlock the potential of your data today.
                 </p>
             </div>
         </div>
     </div>
 <!-- services Page -->
-    <div class="min-h-screen   bg-white border-none  ">
-      <div id="services" class="   min-h-screen   p-4 max-w-[1400px] mx-auto"  >
-        <div class=" flex items-center justify-center ">
-          <h1 class=" text-3xl mx-auto  font-bold  text-black  whitespace-wrap font-sans pt-20 pb-14">
-            Develop a Powerful NLP Application That Includes
-          </h1>
-        </div>
-          <div class="  grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3  gap-12 place-content-center justify-items-center ">
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-  
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                  <div class="px-6 py-4">
-                    <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                  </div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                    <p class=" text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div class="px-6 pt-4 pb-2 text-start">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                      <a href="#machine _learning">
-                          #More
-                      </a>
-                    </span> 
-                  </div>
-              </div>  
-
-              <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
-                <div class="px-6 py-4">
-                  <img class="w-20 h-20 " src="./icons/machin.png" alt="Sunset in the mountains">
-                </div>
-                <div class="px-6 py-4">
-                  <div class="font-bold text-2xl mb-2">Machine Learning</div>
-                  <p class=" text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                </div>
-                <div class="px-6 pt-4 pb-2 text-start">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    <a href="#machine _learning">
-                        #More
-                    </a>
-                  </span> 
-                </div>
-            </div>
-  
-          </div>
-      </div>
+<div class="min-h-screen   bg-gray-100 border-none  ">
+  <div id="services" class="   min-h-screen   p-4 max-w-[1400px] mx-auto"  >
+    <div class=" flex items-center justify-center ">
+      <h1 class=" text-3xl mx-auto  font-bold  text-black  whitespace-wrap font-sans pt-20 pb-14">
+        Build a Robust Language Analytics Application With
+      </h1>
     </div>
+      <div class="  grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3  gap-12 place-content-center justify-items-center ">
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class=" pt-4 px-6">
+                <img class="w-30 h-20" src="../icons/icons/machine-learning.png" alt="Machine Learning">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">Machine Learning</div>
+                <p class=" text-base">
+                  Our comprehensive ML service offers complete development of machine learning applications, spanning from data visualization to classification, regression, clustering, and time series analysis. With end-to-end solutions, we can help you leverage the power of ML to gain valuable insights and make data-driven decisions.
+                </p>
+              </div>
+          </div>  
 
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class="px-6 pt-4">
+                <img class="w-20 h-20 " src="../icons/icons/natural-language-processing.png" alt="Natural Language Processing">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">Natural Language Processing</div>
+                <p class=" text-base">
+                  We offer NLP services, providing end-to-end solutions for a wide range of applications such as text classification, text generation, sentiment analysis, information extraction & retrieval, NER, text summarization, machine translation, and Q & A systems. Our team of experts employs cutting-edge technologies to deliver exceptional results that meet our clients' needs and expectations.
+              </div>
+             
+          </div>  
+
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class="px-6 pt-4">
+                <img class="w-20 h-20 " src="../icons/icons/chatbot.png" alt="Chatbots">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">Chatbots</div>
+                <p class=" text-base">
+                  We specialize in building advanced, multilingual Chatbot applications using RASA Open Source, Amazon Lex, and Dialogflow, and integrating them with popular platforms such as WhatsApp, Telegram, Slack, Facebook, websites, and voice-enabled devices. Our Chatbot service empowers businesses to automate customer interactions, reduce response times, and increase engagement, improving customer satisfaction.
+                </p>
+              </div>
+              
+          </div>  
+
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class="px-6 pt-4">
+                <img class="w-20 h-20 " src="../icons/icons/speech-analytics.png" alt="Speech Analytics">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">Speech Analytics</div>
+                <p class=" text-base">
+                  Our Speech Analytics service builds end-to-end applications for Speech to Text, Text to Speech, sentiment analysis, topic modelling, call categorization, and speaker diarization. Our customizable solutions leverage advanced speech technologies to enhance user experience, optimize operations, and generate new business opportunities.
+                </p>
+              </div>
+             
+          </div>  
+
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class="px-6 pt-4">
+                <img class="w-20 h-20 " src="../icons/icons/openai.png" alt="OpenAI">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">OpenAI</div>
+                <p class=" text-base">
+                  Our OpenAI service builds end-to-end applications for ChatGPT, GPT-3, GPT-2, Whisper for automatic speech recognition, fine-tuning of Q & A bots, generating SQL queries, and developing recommendation, classification, regression, translation of programming languages, and semantic text search. Our customizable solutions leverage advanced AI technologies to enhance user experience, optimize operations, and create new business opportunities.
+                </p>
+              </div>
+                 
+          </div>  
+
+          <div class="max-w-md rounded-3xl overflow-hidden shadow-lg bg-white transition-all ease-in-out duration-700 hover:scale-110 hover:bg-sky-500 hover:text-white">
+              <div class="px-6 pt-4">
+                <img class="w-20 h-20 " src="../icons/icons/cloud.png" alt="Cloud">
+              </div>
+              <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2">Cloud</div>
+                <p class=" text-base">
+                  Our Cloud service develops end-to-end ML & NLP applications in leading cloud platforms such as AWS, Google Cloud, and Microsoft Azure. Our customized solutions optimize operations, reduce costs, and improve scalability, while seamlessly integrating with existing workflows to enable agile decision-making.
+                </p>
+              </div>
+              
+          </div>  
+        
+      </div>
+  </div>
+</div>
     <div id="" class=" bg-white min-h-[700px] flex justify-center items-center   w-full mx-auto  mt-10"> 
       <div class="bg-[#3F83EF] w-full">
       <div class=" mx-auto min-h-[700px] flex flex-col justify-between lg:flex-row lg:space-x-20 space-y-6 lg:space-y-0  max-w-[1400px]  p-8 sm:p-12 rounded-xl  text-white overflow-hidden">
         <div class="flex  items-center lg:justify-end justify-center transition-all duration-100 ease-in-out lg:w-[700px] w-autos">
-          <img src="./icons/profile.jpg" alt="about.png" class="rounded-full lg:min-w-[300px] lg:min-h-[300px] max-w-[300px] max-h-[300px] ">
+          <img src="../icons/profile.jpg" alt="about.png" class="rounded-full lg:min-w-[300px] lg:min-h-[300px] max-w-[300px] max-h-[300px] ">
         </div>
       <div class=" mx-auto  flex justify-center items-center flex-col flex-shrink transition-all duration-100 ease-in-out  ">
         <div class="  flex flex-col   mx-auto    transition-all duration-100 ease-in-out">
@@ -469,7 +370,7 @@
 
     
 
-    <script src="./build/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
