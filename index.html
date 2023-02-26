@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>langlytics</title>
-    <link rel="icon" type="image/x-icon" href="/icons/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="/icons/tab.png">
     <link rel="stylesheet" href="./src/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -21,7 +21,7 @@
     <!-- Header -->
     <header class="  bg-white fixed top-0   z-50 min-w-full   ">
             <!-- navbar -->
-        <nav class="  max-w-[1400px] mx-auto flex flex-col py-1  lg:flex-row  lg:flex-nowrap lg:flex lg:items-center  lg:justify-between lg:space-x-10 border-none transition-all ease-in-out  px-4 ">
+        <nav class="  max-w-[1400px] mx-auto flex flex-col py-1  lg:flex-row  lg:flex-nowrap lg:flex lg:items-center  lg:justify-between lg:space-x-10 border-none transition-all ease-in-out  px-8 ">
             <!-- logo and mobile menu section -->
             <div class="  flex items-center justify-between transition-all ease-in-out duration-100">
                 <!-- Logo -->
@@ -47,8 +47,10 @@
                 
             </div>   
 
-            <div class="lg:flex hidden  justify-between items-center   ">
-                <a href="#" class=" block    text-xl   font-bold  "> Get In Touch!</a>
+            <div class="lg:flex hidden  justify-between items-center">
+             
+              <button class="max-w-max text-center transition-all ease-in-out  hover:bg-transparent rounded-full px-8 py-2.5    bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-white ">
+                <a href="#" class=" block    text-lg   font-bold  "> Get in touch</a>
               </button>
             </div> 
             
@@ -100,11 +102,11 @@
         </nav>
     </header>
     <section id="home" class="hero  ">
-        <div class=" max-w-[1400px] mx-auto flex flex-col justify-center  min-h-screen  p-4  transition-all duration-100 ease-in-out ">
-          <h1 class=" max-w-2xl mb-2  text-[50px]   font-bold leading-[50px] text-white text-left   font-sans  ">
+        <div class=" max-w-[1400px] mx-auto flex flex-col justify-center  min-h-screen  px-8  transition-all duration-100 ease-in-out ">
+          <h1 class=" max-w-2xl mb-2  text-3xl   font-bold  text-white text-left   font-sans  ">
             Language Analytics
           </h1>
-            <h1 class=" max-w-sm mb-2  text-lg  text-zinc-600 text-left   font-sans   py-8" >Power Your language with AI  and turn chatbot dreams into  reality</h1> 
+            <h1 class=" max-w-sm mb-2  text-lg  text-zinc-600 text-left   font-sans   py-4" >Power Your language with AI  and turn chatbot dreams into  reality</h1> 
             <button class="max-w-max text-center transition-all ease-in-out  hover:bg-transparent rounded-full px-8 py-2.5    bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-white ">
               <a href="#" class=" block    text-lg   font-bold  "> Get Strated</a>
             </button>
@@ -115,7 +117,7 @@
     <!-- About Page -->
     <div id="about" class=" min-h-screen flex items-center ">
            
-          <div class="max-w-[1400px] mx-auto grid grid-cols-1 place-items-center lg:grid-cols-2 transition-all duration-100 ease-in-out  justify-items-center  p-4">
+          <div class="max-w-[1400px] mx-auto grid grid-cols-1 place-items-center lg:grid-cols-2 transition-all duration-100 ease-in-out  justify-items-center  px-8">
             <div class="flex text-center lg:order-last transition-all duration-100 ease-in-out">
                 <img src="./icons/about_img.jpg" alt="about.png">
             </div>
@@ -134,7 +136,7 @@
     </div>
 <!-- services Page -->
 <div class="min-h-screen   bg-gray-100 border-none  ">
-  <div id="services" class="   min-h-screen   p-4 max-w-[1400px] mx-auto"  >
+  <div id="services" class="   min-h-screen   px-8 max-w-[1400px] mx-auto"  >
     <div class=" flex items-center justify-center ">
       <h1 class=" text-3xl mx-auto  font-bold  text-black  whitespace-wrap font-sans pt-20 pb-14">
         Build a Robust Language Analytics Application With
@@ -370,7 +372,7 @@
 
     
 
-    <script src="main.js"></script>
+    <script src="./build/main.js"></script>
 </body>
 
 </html>
